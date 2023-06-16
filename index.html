@@ -90,7 +90,7 @@
 
       <!-- --------- About Section --------- -->
 
-      <section class="about section" id="about">
+      <section class="about section" id="about" data-aos="fade-up">
         <img src="/assets/triangle.png" class="shape triangle" alt="" />
         <div class="container">
           <div class="about-grid">
@@ -881,7 +881,13 @@
           </div>
         </div>
 
-        <form class="contact-form" id="FORM" data-aos="fade-up">
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/iyunkmaulana81@gmail.com"
+          method="POST"
+          id="FORM"
+          data-aos="fade-up"
+        >
           <h3>Send me a message</h3>
           <input
             type="text"
@@ -891,6 +897,7 @@
           />
           <input
             type="email"
+            name="email"
             class="form-input"
             placeholder="Your Email"
             required

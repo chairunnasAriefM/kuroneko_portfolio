@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       sr.reveal(".showcase-info", { delay: 600 });
       sr.reveal(".showcase-image", { origin: "top", delay: 700 });
-      sr.reveal(".about", { origin: "top", delay: 400 });
+      // sr.reveal(".about", { origin: "top", delay: 400 });
       sr.reveal(".portfolio", { origin: "top", delay: 300 });
       // sr.reveal(".contact", { origin: "top", delay: 250 });
       // sr.reveal(".term", { origin: "top", delay: 250 });
