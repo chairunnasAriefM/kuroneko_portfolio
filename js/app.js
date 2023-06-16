@@ -138,7 +138,7 @@ links.forEach((link) =>
   })
 );
 
-//tes preloader
+//preloader
 document.addEventListener("DOMContentLoaded", function () {
   var preloader = document.getElementById("preloader");
   var images = document.getElementsByTagName("img");
@@ -148,13 +148,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function imageLoaded() {
     imagesLoaded++;
     if (imagesLoaded === imagesTotal) {
-      // Semua gambar telah di-generate, aktifkan JS dan CSS lainnya
-      // Hapus preloader
       document.body.removeChild(preloader);
-      // Hapus kelas 'stopScrolling' dari elemen 'body'
       document.body.classList.remove("stopScrolling");
 
-      // Inisialisasi ScrollReveal setelah preloader berhenti
       ScrollReveal({ reset: true });
 
       let sr = ScrollReveal({
@@ -166,15 +162,13 @@ document.addEventListener("DOMContentLoaded", function () {
       sr.reveal(".showcase-image", { origin: "top", delay: 700 });
       sr.reveal(".about", { origin: "top", delay: 400 });
       sr.reveal(".portfolio", { origin: "top", delay: 300 });
-      sr.reveal(".contact", { origin: "top", delay: 250 });
-      sr.reveal(".term", { origin: "top", delay: 250 });
+      // sr.reveal(".contact", { origin: "top", delay: 250 });
+      // sr.reveal(".term", { origin: "top", delay: 250 });
     }
   }
 
-  // Tambahkan kelas 'stopScrolling' pada elemen 'body'
   document.body.classList.add("stopScrolling");
 
-  // Mendaftarkan fungsi imageLoaded() untuk setiap gambar
   for (var i = 0; i < imagesTotal; i++) {
     if (images[i].complete) {
       imageLoaded();
