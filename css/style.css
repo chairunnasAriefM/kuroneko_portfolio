@@ -920,6 +920,10 @@ textarea.form-input {
   font-size: 17px;
 }
 
+#heading1 {
+  margin-top: 70px;
+}
+
 /* guideline styling */
 
 .guidelines {
@@ -1409,11 +1413,19 @@ footer .social-media {
     font-size: 1.7rem;
   }
 
+  #text1 {
+    margin-right: 130px;
+  }
+
   .sub-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .sub-info .text {
+    text-align: start;
   }
 
   footer .container {
@@ -1470,7 +1482,7 @@ footer .social-media {
 
 /* 360px screen */
 
-@media (max-width: 500px) {
+@media (max-width: 360px) {
   header {
     height: 505px;
     max-height: 100px;
@@ -1496,5 +1508,37 @@ footer .social-media {
     left: 5%;
   }
 
-  
+  .sub-box .heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .sub-box p {
+    font-size: 1rem;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .social-media {
+    margin-left: 10px;
+  }
+
+  footer .text {
+    order: 3;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .text.lope {
+    display: none;
+  }
+
+  #logo {
+    margin-right: auto;
+    font-size: 20px;
+  }
 }
