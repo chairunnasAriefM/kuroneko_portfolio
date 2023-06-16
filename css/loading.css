@@ -1,0 +1,80 @@
+.content {
+  position: relative; /* Tambahkan properti position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Menggunakan vh untuk tinggi layar */
+}
+
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Menambahkan z-index untuk menempatkan preloader di atas konten */
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+.loading_text {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0px; /* Menggunakan px untuk tinggi */
+  }
+  25% {
+    height: 0px; /* Menggunakan px untuk tinggi */
+  }
+  50% {
+    height: 100%; /* Menggunakan persentase untuk tinggi */
+  }
+  75% {
+    height: 100%; /* Menggunakan persentase untuk tinggi */
+  }
+  100% {
+    height: 0px; /* Menggunakan px untuk tinggi */
+  }
+}
