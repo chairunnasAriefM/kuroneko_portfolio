@@ -26,6 +26,10 @@
 
     <!-- --------- AOS --------- -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+
+    <!-- --------- Sweet Alert ---------  -->
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css" />
 
     <!-- --------- CSS Files --------- -->
     <link rel="stylesheet" href="css/style.css" />
@@ -883,28 +887,33 @@
 
         <form
           class="contact-form"
-          action="https://formsubmit.co/iyunkmaulana81@gmail.com"
+          action="https://formsubmit.co/15f39d559da37ae05fdba521ce375a22"
           method="POST"
           id="FORM"
           data-aos="fade-up"
         >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+
           <h3>Send me a message</h3>
           <input
             type="text"
             class="form-input"
             placeholder="Your Name"
+            name="Name"
             required
           />
           <input
             type="email"
-            name="email"
             class="form-input"
             placeholder="Your Email"
+            name="Email"
             required
           />
           <textarea
             placeholder="Project Details"
             class="form-input"
+            name="Message"
             required
           ></textarea>
           <input type="submit" value="Send" class="btn" onclick="SendEmail()" />
