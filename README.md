@@ -1,6 +1,3 @@
-Sure! Here's a professional and engaging README for your friend's GitHub project:
-
----
 
 # Anime Illustrator Portfolio
 
