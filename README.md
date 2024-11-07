@@ -19,7 +19,7 @@ Kuroneko is an accomplished anime illustrator known for their distinctive style 
 
 Explore the gallery to view a curated selection of Kuroneko's work. Each piece reflects their artistic journey and showcases a variety of techniques and themes within the anime genre.
 
-[Insert images or links to artwork here]
+https://chairunnasariefm.github.io/kuroneko_portfolio/
 
 ## Tools and Techniques
 
